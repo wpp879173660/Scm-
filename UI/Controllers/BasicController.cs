@@ -16,7 +16,7 @@ namespace UI.Controllers
         public SCMEntities1 db { get; set; }
         // GET: Basic
         [Inject]
-        public DALBase<CustomerLevel> SeleAllCheckDepot { get; set; }
+        public DALBase<CheckDepot> SeleAllCheckDepot { get; set; }
 
 
         public ActionResult Index()

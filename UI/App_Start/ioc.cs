@@ -42,7 +42,7 @@ namespace UI.App_Start
         private void AddBindings()
         {
             //绑定接口和实现类
-            _kernel.Bind<IDAL.dbhelp<dynamic>>().To<DALBase<dynamic>>();
+            _kernel.Bind<IDAL.dbhelp<Type>>().To<DALBase<Type>>();
 
             //InRequestScope 需要命名空间 Ninject.Web.Common，更需要程序集 Ninject.Web.Common
             _kernel.Bind<MODEL.SCMEntities1>().ToSelf().InRequestScope();
